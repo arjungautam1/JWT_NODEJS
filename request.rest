@@ -1,11 +1,18 @@
-POST http://localhost:3000/login
+POST http://localhost:4000/login
 Content-Type: application/json
 
 {
-        "username":"Arjun"
+        "username":"Ram"
 }
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzE1MTI5MjQ0fQ.1RXO1pNiHKJmWx5AaWgnx087zrC8w9eMMLxi-5Ikib8"
+}
+
 ###
 GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJqdW4iLCJpYXQiOjE3MTUxMjAzMzJ9.E3abhU5m5vDmBHbSFbLIRwayzSfARiRqdcQ6lUE1ETg
-
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzE1MTI5MjU3LCJleHAiOjE3MTUxMjkyODd9.Blrv6q55d-Lvsn31itBJsmeO_HuQEhbDQP3RT0lHNnk
