@@ -4,15 +4,22 @@ Content-Type: application/json
 {
         "username":"Ram"
 }
-
 ###
+
 POST http://localhost:4000/token
 Content-Type: application/json
 
 {
-"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzE1MTI5MjQ0fQ.1RXO1pNiHKJmWx5AaWgnx087zrC8w9eMMLxi-5Ikib8"
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzE1MTMwMTEyfQ.sYq54hijthRJCmUjN77i1VsFFtckyuzwz5sz4K9HNMM"
 }
-
 ###
 GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzE1MTI5MjU3LCJleHAiOjE3MTUxMjkyODd9.Blrv6q55d-Lvsn31itBJsmeO_HuQEhbDQP3RT0lHNnk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzE1MTMwMDM2LCJleHAiOjE3MTUxMzM2MzZ9.4KaDHLaf6B1Y7D-so4OJnzJKuw8nILzy11JhxrIkXSI
+### 
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+        "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzE1MTMwMTEyfQ.sYq54hijthRJCmUjN77i1VsFFtckyuzwz5sz4K9HNMM"
+}
+
